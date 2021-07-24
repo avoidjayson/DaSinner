@@ -1,0 +1,266 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local SinnerX = Instance.new("ScreenGui")
+local main = Instance.new("ImageLabel")
+local login = Instance.new("ImageLabel")
+local label = Instance.new("TextLabel")
+local box = Instance.new("ImageLabel")
+local password = Instance.new("TextBox")
+local Enter = Instance.new("TextButton")
+local Enter_Roundify_12px = Instance.new("ImageLabel")
+local label_2 = Instance.new("TextLabel")
+
+--Properties:
+
+SinnerX.Name = "Sinner X"
+SinnerX.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+main.Name = "main"
+main.Parent = SinnerX
+main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+main.BackgroundTransparency = 1.000
+main.Position = UDim2.new(0.266552031, 0, 0.714738488, 0)
+main.Size = UDim2.new(0, 469, 0, 168)
+main.Visible = false
+main.Image = "rbxassetid://3570695787"
+main.ImageColor3 = Color3.fromRGB(78, 78, 78)
+main.ScaleType = Enum.ScaleType.Slice
+main.SliceCenter = Rect.new(100, 100, 100, 100)
+main.SliceScale = 0.120
+
+login.Name = "login"
+login.Parent = SinnerX
+login.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+login.BackgroundTransparency = 1.000
+login.Position = UDim2.new(0.564305961, 0, 0.457021266, 0)
+login.Size = UDim2.new(0, 334, 0, 278)
+login.Image = "rbxassetid://3570695787"
+login.ImageColor3 = Color3.fromRGB(85, 170, 255)
+login.ScaleType = Enum.ScaleType.Slice
+login.SliceCenter = Rect.new(100, 100, 100, 100)
+login.SliceScale = 0.120
+
+label.Name = "label"
+label.Parent = login
+label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+label.BackgroundTransparency = 1.000
+label.Position = UDim2.new(-0.00234784186, 0, -0.0222510472, 0)
+label.Size = UDim2.new(0, 106, 0, 58)
+label.Font = Enum.Font.GothamBold
+label.Text = "SINX"
+label.TextColor3 = Color3.fromRGB(255, 255, 255)
+label.TextScaled = true
+label.TextSize = 14.000
+label.TextWrapped = true
+
+box.Name = "box"
+box.Parent = login
+box.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+box.BackgroundTransparency = 1.000
+box.Position = UDim2.new(0.0358388722, 0, 0.223955661, 0)
+box.Size = UDim2.new(0, 309, 0, 70)
+box.Image = "rbxassetid://3570695787"
+box.ImageColor3 = Color3.fromRGB(54, 54, 54)
+box.ScaleType = Enum.ScaleType.Slice
+box.SliceCenter = Rect.new(100, 100, 100, 100)
+box.SliceScale = 0.120
+
+password.Name = "password"
+password.Parent = box
+password.BackgroundColor3 = Color3.fromRGB(78, 73, 77)
+password.BackgroundTransparency = 1.000
+password.BorderSizePixel = 0
+password.Position = UDim2.new(0.00164704502, 0, 0.03038821, 0)
+password.Size = UDim2.new(0, 405, 0, 66)
+password.Font = Enum.Font.SourceSansLight
+password.PlaceholderText = "Key Here"
+password.Text = ""
+password.TextColor3 = Color3.fromRGB(255, 255, 255)
+password.TextSize = 60.000
+password.TextXAlignment = Enum.TextXAlignment.Left
+
+Enter.Name = "Enter"
+Enter.Parent = login
+Enter.BackgroundColor3 = Color3.fromRGB(52, 47, 47)
+Enter.BackgroundTransparency = 1.000
+Enter.BorderSizePixel = 0
+Enter.Position = UDim2.new(0.280797929, 0, 0.600535929, 0)
+Enter.Size = UDim2.new(0, 217, 0, 66)
+Enter.Font = Enum.Font.GothamBold
+Enter.Text = ""
+Enter.TextColor3 = Color3.fromRGB(255, 255, 255)
+Enter.TextScaled = true
+Enter.TextSize = 14.000
+Enter.TextWrapped = true
+
+Enter_Roundify_12px.Name = "Enter_Roundify_12px"
+Enter_Roundify_12px.Parent = Enter
+Enter_Roundify_12px.Active = true
+Enter_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+Enter_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Enter_Roundify_12px.BackgroundTransparency = 1.000
+Enter_Roundify_12px.Position = UDim2.new(0.334101379, 0, 0.924242437, 0)
+Enter_Roundify_12px.Selectable = true
+Enter_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
+Enter_Roundify_12px.Image = "rbxassetid://3570695787"
+Enter_Roundify_12px.ImageColor3 = Color3.fromRGB(52, 47, 47)
+Enter_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+Enter_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+Enter_Roundify_12px.SliceScale = 0.120
+
+label_2.Name = "label"
+label_2.Parent = Enter
+label_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+label_2.BackgroundTransparency = 1.000
+label_2.Position = UDim2.new(-0.165898561, 0, 0.424242437, 0)
+label_2.Size = UDim2.new(0, 217, 0, 66)
+label_2.Font = Enum.Font.GothamBold
+label_2.Text = "Submit"
+label_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+label_2.TextScaled = true
+label_2.TextSize = 14.000
+label_2.TextWrapped = true
+
+-- Scripts:
+
+local function OTBQ_fake_script() -- main.LocalScript 
+	local script = Instance.new('LocalScript', main)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(OTBQ_fake_script)()
+local function XJPBA_fake_script() -- SinnerX.LocalScript 
+	local script = Instance.new('LocalScript', SinnerX)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(XJPBA_fake_script)()
+local function RHTBB_fake_script() -- login.LocalScript 
+	local script = Instance.new('LocalScript', login)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(RHTBB_fake_script)()
+local function LSUX_fake_script() -- Enter.LocalScript 
+	local script = Instance.new('LocalScript', Enter)
+
+	local password = script.Parent.Parent.box.password
+	local main = script.Parent.Parent.Parent.main
+	local login = script.Parent.Parent
+	
+	
+	script.Parent.MouseButton1Click:Connect(function() 
+		if password.Text == "Sinner" or -- change this to your designated password, do NOT use your ROBLOX password.
+			password.Text == "sinner" then -- second key if wanted
+			login.Visible = false
+			main.Visible = true 
+		end
+		
+	end)
+end
+coroutine.wrap(LSUX_fake_script)()
